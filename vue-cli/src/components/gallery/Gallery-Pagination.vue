@@ -47,7 +47,7 @@
 		},
 		computed: {
 			pages: function() {
-				var pages = []
+				var pages = [];
 
 				for(var i = this.rangeStart; i <= this.rangeEnd; i++) {
 					pages.push(i)
@@ -56,12 +56,12 @@
 				return pages
 			},
 			rangeStart: function() {
-				var start = this.current - this.pageRange
+				var start = this.current - this.pageRange;
 
 				return (start > 0) ? start : 1
 			},
 			rangeEnd: function() {
-				var end = this.current + this.pageRange
+				var end = this.current + this.pageRange;
 
 				return (end < this.totalPages) ? end : this.totalPages
 			},
